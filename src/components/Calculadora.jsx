@@ -16,28 +16,24 @@ export function Calculadora() {
         setResultado(0)
 
         setNumero(numero + num)
-try {
-    
-    if (num === "delete") {
-        limpiar()
-        return
-    }
+        try {
 
-    if (num === "=") {
-        setResultado(eval(numero))
-        limpiar()
-        return
-    }
-} catch (error) {
-    window.alert("Error en la operacion")
-    limpiar()
-    setResultado(0)
+            if (num === "delete") {
+                limpiar()
+                return
+            }
 
-}
+            if (num === "=") {
+                setResultado(eval(numero))
+                limpiar()
+                return
+            }
+        } catch (error) {
+            window.alert("Error en la operacion")
+            limpiar()
+            setResultado(0)
 
-
-
-
+        }
 
     }
 
@@ -49,10 +45,10 @@ try {
 
 
     return (
-        <div className='flex flex-col items-center'>
 
+        <div className="flex h-screen justify-center items-center">
 
-            <div className="p-6 bg-white w-56 rounded-lg border  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <div className="p-6 bg-white w-56 rounded-lg border   border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <h5 className="text-3xl font-bold text-center mb-5 text-gray-900 dark:text-white">Calculadora</h5>
 
 
@@ -92,6 +88,9 @@ try {
 
 
 
+
         </div>
+
+
     )
 }
