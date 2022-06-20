@@ -1,6 +1,14 @@
 import React from 'react'
 
+
 export function Calculadora() {
+
+    const styleButton = {
+        number:"bg-white rounded-lg hover:bg-yellow-300 text-gray-900 font-bold",
+        operator:"bg-white rounded-lg hover:bg-orange-500 text-gray-900 font-bold",
+    }
+
+
     return (
         <div className='flex flex-col items-center'>
 
@@ -20,22 +28,22 @@ export function Calculadora() {
 
                 <div>
                     <div class="grid gap-2 grid-cols-4 text-blue-50">
-                        <button type='button' className='bg-white rounded-lg hover:bg-yellow-300 text-gray-900 font-bold'>7</button>
-                        <button type='button' className='bg-white rounded-lg hover:bg-yellow-300 text-gray-900 font-bold'>8</button>
-                        <button type='button' className='bg-white rounded-lg hover:bg-yellow-300 text-gray-900 font-bold'>9</button>
-                        <button type='button' className='bg-white rounded-lg hover:bg-red-500 text-gray-900 font-bold'>➗</button>
-                        <button type='button' className='bg-white rounded-lg hover:bg-yellow-300 text-gray-900 font-bold'>4</button>
-                        <button type='button' className='bg-white rounded-lg hover:bg-yellow-300 text-gray-900 font-bold'>5</button>
-                        <button type='button' className='bg-white rounded-lg hover:bg-yellow-300 text-gray-900 font-bold'>6</button>
-                        <button type='button' className='bg-white rounded-lg hover:bg-red-500 text-gray-900 font-bold'>➖</button>
-                        <button type='button' className='bg-white rounded-lg hover:bg-yellow-300 text-gray-900 font-bold'>1</button>
-                        <button type='button' className='bg-white rounded-lg hover:bg-yellow-300 text-gray-900 font-bold'>2</button>
-                        <button type='button' className='bg-white rounded-lg hover:bg-yellow-300 text-gray-900 font-bold'>3</button>
-                        <button type='button' className='bg-white rounded-lg hover:bg-red-500 text-gray-900 font-bold'>✖️</button>
-                        <button type='button' className='bg-white rounded-lg hover:bg-red-500 text-gray-900 font-bold'>🔚</button>
-                        <button type='button' className='bg-white rounded-lg hover:bg-yellow-300 text-gray-900 font-bold'>0</button>
-                        <button type='button' className='bg-white rounded-lg hover:bg-yellow-300 text-gray-900 font-bold'>.</button>
-                        <button type='button' className='bg-white rounded-lg hover:bg-red-500 text-gray-900 font-bold'>=</button>
+                        <button type='button' className={styleButton.number}>7</button>
+                        <button type='button' className={styleButton.number}>8</button>
+                        <button type='button' className={styleButton.number}>9</button>
+                        <button type='button' className={styleButton.operator}>➗</button>
+                        <button type='button' className={styleButton.number}>4</button>
+                        <button type='button' className={styleButton.number}>5</button>
+                        <button type='button' className={styleButton.number}>6</button>
+                        <button type='button' className={styleButton.operator}>➖</button>
+                        <button type='button' className={styleButton.number}>1</button>
+                        <button type='button' className={styleButton.number}>2</button>
+                        <button type='button' className={styleButton.number}>3</button>
+                        <button type='button' className={styleButton.operator}>✖️</button>
+                        <button type='button' className={styleButton.operator}>🔚</button>
+                        <button type='button' className={styleButton.number}>0</button>
+                        <button type='button' className={styleButton.number}>.</button>
+                        <button type='button' className={styleButton.operator}>=</button>
 
                     </div>
                 </div>
